@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UpdateSchema"
+    targetNamespace="http://www.teambox.co/Updates"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="teambox">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="product">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"></xs:element>
+              <xs:element name="name" type="xs:string"></xs:element>
+              <xs:element name="version" type="xs:string"></xs:element>
+              <xs:element name="url" type="xs:string"></xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+   </xs:element>
+</xs:schema>
